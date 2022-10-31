@@ -6,10 +6,16 @@ import './main.css';
 function Example() {
   return (
     <>
-      <p> <b>Auto vs fixed column width </b>        </p>
-      <p>         </p>
-      
-      <p> Column 1 has <code>size</code> set to <code>"auto"</code> </p> 
+      <p>
+        {' '}
+        <b>Auto vs fixed column width </b>{' '}
+      </p>
+      <p> </p>
+
+      <p>
+        {' '}
+        Column 1 has <code>size</code> set to <code>"auto"</code>{' '}
+      </p>
       <IonGrid>
         <IonRow>
           <IonCol size="auto">1</IonCol>
@@ -18,7 +24,9 @@ function Example() {
         </IonRow>
       </IonGrid>
 
-      <p>Column 1 has <code>size</code> set to <code>"8"</code> rest are default</p>
+      <p>
+        Column 1 has <code>size</code> set to <code>"8"</code> rest are default
+      </p>
       <IonGrid>
         <IonRow>
           <IonCol size="8">1</IonCol>
@@ -27,13 +35,26 @@ function Example() {
         </IonRow>
       </IonGrid>
 
-
-      <p>Column 1 has <code>size</code> set to <code>"8"</code> rest are "1""</p>
+      <p>
+        Column 1 has <code>size</code> set to <code>"8"</code> rest are "1"
+      </p>
       <IonGrid>
         <IonRow>
           <IonCol size="8">1</IonCol>
           <IonCol size="1">2</IonCol>
           <IonCol size="1">3</IonCol>
+        </IonRow>
+      </IonGrid>
+
+      <p>
+        Column 1 has <code>size</code> set to <code>"1"</code> rest are "1"
+      </p>
+      <IonGrid>
+        <IonRow>
+          <IonCol size="1">1</IonCol>
+          <IonCol size="1">2</IonCol>
+          <IonCol size="1">3</IonCol>
+          <IonCol size="1">4</IonCol>
         </IonRow>
       </IonGrid>
 
@@ -54,7 +75,6 @@ function Example() {
           <IonCol>12</IonCol>
         </IonRow>
       </IonGrid>
-
     </>
   );
 }
