@@ -18,7 +18,7 @@ function Example() {
         </IonRow>
       </IonGrid>
 
-      <p>Column 1 has <code>size</code> set to <code>"8"</code></p>
+      <p>Column 1 has <code>size</code> set to <code>"8"</code> rest are default</p>
       <IonGrid>
         <IonRow>
           <IonCol size="8">1</IonCol>
@@ -27,6 +27,15 @@ function Example() {
         </IonRow>
       </IonGrid>
 
+
+      <p>Column 1 has <code>size</code> set to <code>"8"</code> rest are "1""</p>
+      <IonGrid>
+        <IonRow>
+          <IonCol size="8">1</IonCol>
+          <IonCol size="1">2</IonCol>
+          <IonCol size="1">3</IonCol>
+        </IonRow>
+      </IonGrid>
 
       <p>12 Column layout</p>
       <IonGrid>
